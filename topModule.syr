@@ -1,0 +1,919 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> Reading design: topModule.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "topModule.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "topModule"
+Output Format                      : NGC
+Target Device                      : xc7k70t-2-fbg676
+
+---- Source Options
+Top Module Name                    : topModule
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\addr_behavioral.v" into library work
+Parsing module <addr_behavioral>.
+Analyzing Verilog file "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\shiftLeft_behavioral.v" into library work
+Parsing module <shiftLeft_behavioral>.
+Analyzing Verilog file "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\regMux_behavioral.v" into library work
+Parsing module <instMux_behavioral>.
+Analyzing Verilog file "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\regMem_behavioral.v" into library work
+Parsing module <regMem_behavioral>.
+Analyzing Verilog file "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\PC_behavioral.v" into library work
+Parsing module <PC_behavioral>.
+Analyzing Verilog file "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\memInst_behavioral.v" into library work
+Parsing module <memInst_behavioral>.
+Analyzing Verilog file "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\jumperAddr_behavioral.v" into library work
+Parsing module <jumperAddr_behavioral>.
+Analyzing Verilog file "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\dataMux_behavioral.v" into library work
+Parsing module <dataMux_behavioral>.
+Analyzing Verilog file "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\dataMemory_behavioral.v" into library work
+Parsing module <dataMemory_behavioral>.
+Analyzing Verilog file "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\alu_behavioral.v" into library work
+Parsing module <alu_behavioral>.
+Analyzing Verilog file "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\aluMux_behavioral.v" into library work
+Parsing module <aluMux_behavioral>.
+Analyzing Verilog file "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\WRITE_BACK.v" into library work
+Parsing module <WRITE_BACK>.
+Analyzing Verilog file "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\signalExtend_behavioral.v" into library work
+Parsing module <signalExtend_behavioral>.
+Analyzing Verilog file "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\memRollBackBuffer_behavioral.v" into library work
+Parsing module <memRollBackBuffer_behavioral>.
+Analyzing Verilog file "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\MEMORY_ACCESS.v" into library work
+Parsing module <MEMORY_ACCESS>.
+Analyzing Verilog file "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\instBuffer_behavioral.v" into library work
+Parsing module <instBuffer_behavioral>.
+Analyzing Verilog file "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\FETCH.v" into library work
+Parsing module <FETCH>.
+Analyzing Verilog file "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\EXECUTE.v" into library work
+Parsing module <EXECUTE>.
+Analyzing Verilog file "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\DECODE.v" into library work
+Parsing module <DECODE>.
+Analyzing Verilog file "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\dataBuffer_behavioral.v" into library work
+Parsing module <dataBuffer_behavioral>.
+Analyzing Verilog file "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\aluControl_behavioral.v" into library work
+Parsing module <aluControl_behavioral>.
+Analyzing Verilog file "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\aluControl_beh.v" into library work
+Parsing module <aluControl_beh>.
+Analyzing Verilog file "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\aluBuffer_behavioral.v" into library work
+Parsing module <aluBuffer_behavioral>.
+Analyzing Verilog file "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\topModule.v" into library work
+Parsing module <topModule>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <topModule>.
+
+Elaborating module <FETCH>.
+
+Elaborating module <PC_behavioral>.
+
+Elaborating module <addr_behavioral>.
+WARNING:HDLCompiler:413 - "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\addr_behavioral.v" Line 8: Result of 9-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <memInst_behavioral>.
+Reading initialization file \"MEM_INST.txt\".
+WARNING:HDLCompiler:1670 - "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\memInst_behavioral.v" Line 10: Signal <REG_INST> in initial block is partially initialized.
+
+Elaborating module <instBuffer_behavioral>.
+
+Elaborating module <aluControl_behavioral>.
+
+Elaborating module <DECODE>.
+
+Elaborating module <regMem_behavioral>.
+Reading initialization file \"REG_DATA.txt\".
+
+Elaborating module <instMux_behavioral>.
+
+Elaborating module <signalExtend_behavioral>.
+
+Elaborating module <aluBuffer_behavioral>.
+
+Elaborating module <aluControl_beh>.
+
+Elaborating module <EXECUTE>.
+
+Elaborating module <alu_behavioral>.
+
+Elaborating module <aluMux_behavioral>.
+
+Elaborating module <dataBuffer_behavioral>.
+
+Elaborating module <MEMORY_ACCESS>.
+
+Elaborating module <dataMemory_behavioral>.
+Reading initialization file \"DATA_ACCESS.txt\".
+
+Elaborating module <dataMux_behavioral>.
+
+Elaborating module <memRollBackBuffer_behavioral>.
+
+Elaborating module <WRITE_BACK>.
+
+Elaborating module <shiftLeft_behavioral>.
+
+Elaborating module <jumperAddr_behavioral>.
+WARNING:HDLCompiler:413 - "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\jumperAddr_behavioral.v" Line 8: Result of 32-bit expression is truncated to fit in 8-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <topModule>.
+    Related source file is "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\topModule.v".
+    Summary:
+	no macro.
+Unit <topModule> synthesized.
+
+Synthesizing Unit <FETCH>.
+    Related source file is "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\FETCH.v".
+    Summary:
+	no macro.
+Unit <FETCH> synthesized.
+
+Synthesizing Unit <PC_behavioral>.
+    Related source file is "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\PC_behavioral.v".
+    Found 8-bit register for signal <PC_REG>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <PC_behavioral> synthesized.
+
+Synthesizing Unit <addr_behavioral>.
+    Related source file is "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\addr_behavioral.v".
+    Found 8-bit adder for signal <ADDRESS_OUT> created at line 8.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <addr_behavioral> synthesized.
+
+Synthesizing Unit <memInst_behavioral>.
+    Related source file is "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\memInst_behavioral.v".
+WARNING:Xst:647 - Input <ADDRESS<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2999 - Signal 'REG_INST', unconnected in block 'memInst_behavioral', is tied to its initial value.
+    Found 64x32-bit single-port Read Only RAM <Mram_REG_INST> for signal <REG_INST>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <memInst_behavioral> synthesized.
+
+Synthesizing Unit <instBuffer_behavioral>.
+    Related source file is "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\instBuffer_behavioral.v".
+    Found 8-bit register for signal <PC_COUNTER_FIRST_OUT>.
+    Found 32-bit register for signal <DATA_OUT>.
+    Summary:
+	inferred  40 D-type flip-flop(s).
+Unit <instBuffer_behavioral> synthesized.
+
+Synthesizing Unit <aluControl_behavioral>.
+    Related source file is "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\aluControl_behavioral.v".
+    Summary:
+	no macro.
+Unit <aluControl_behavioral> synthesized.
+
+Synthesizing Unit <DECODE>.
+    Related source file is "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\DECODE.v".
+    Summary:
+	no macro.
+Unit <DECODE> synthesized.
+
+Synthesizing Unit <regMem_behavioral>.
+    Related source file is "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\regMem_behavioral.v".
+    Found 32x32-bit dual-port RAM <Mram_REG_BANK> for signal <REG_BANK>.
+    Summary:
+	inferred   2 RAM(s).
+	inferred   2 Multiplexer(s).
+Unit <regMem_behavioral> synthesized.
+
+Synthesizing Unit <instMux_behavioral>.
+    Related source file is "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\regMux_behavioral.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <instMux_behavioral> synthesized.
+
+Synthesizing Unit <signalExtend_behavioral>.
+    Related source file is "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\signalExtend_behavioral.v".
+    Summary:
+	no macro.
+Unit <signalExtend_behavioral> synthesized.
+
+Synthesizing Unit <aluBuffer_behavioral>.
+    Related source file is "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\aluBuffer_behavioral.v".
+    Found 32-bit register for signal <DATA_OUT_2>.
+    Found 32-bit register for signal <EXTENDED_OUT>.
+    Found 5-bit register for signal <DEST_ADDR_OUT>.
+    Found 8-bit register for signal <PC_COUNTER_SECOND_OUT>.
+    Found 1-bit register for signal <BRANCH_BUFF_OUT>.
+    Found 1-bit register for signal <MEM_READ_BUFF_OUT>.
+    Found 1-bit register for signal <MEM_TO_REG_BUFF_OUT>.
+    Found 2-bit register for signal <ALU_OP_BUFF_OUT>.
+    Found 1-bit register for signal <MEM_WRITE_BUFF_OUT>.
+    Found 1-bit register for signal <ALU_SRC_BUFF_OUT>.
+    Found 1-bit register for signal <REG_WRITE_BUFF_OUT>.
+    Found 32-bit register for signal <DATA_OUT_1>.
+    Summary:
+	inferred 117 D-type flip-flop(s).
+Unit <aluBuffer_behavioral> synthesized.
+
+Synthesizing Unit <aluControl_beh>.
+    Related source file is "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\aluControl_beh.v".
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <aluControl_beh> synthesized.
+
+Synthesizing Unit <EXECUTE>.
+    Related source file is "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\EXECUTE.v".
+    Summary:
+	no macro.
+Unit <EXECUTE> synthesized.
+
+Synthesizing Unit <alu_behavioral>.
+    Related source file is "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\alu_behavioral.v".
+    Found 32-bit subtractor for signal <REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_sub_4_OUT> created at line 19.
+    Found 32-bit adder for signal <REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_add_1_OUT> created at line 16.
+    Found 32-bit 7-to-1 multiplexer for signal <_n0036> created at line 7.
+    Found 32-bit comparator greater for signal <REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o> created at line 33
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+	inferred  13 Multiplexer(s).
+Unit <alu_behavioral> synthesized.
+
+Synthesizing Unit <aluMux_behavioral>.
+    Related source file is "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\aluMux_behavioral.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <aluMux_behavioral> synthesized.
+
+Synthesizing Unit <dataBuffer_behavioral>.
+    Related source file is "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\dataBuffer_behavioral.v".
+    Found 32-bit register for signal <READ_DATA_2_OUT>.
+    Found 5-bit register for signal <DEST_ADDR_OUT>.
+    Found 1-bit register for signal <MEM_WRITE_ACCESS_BUFF_OUT>.
+    Found 1-bit register for signal <MEM_READ_ACCESS_BUFF_OUT>.
+    Found 1-bit register for signal <MEM_TO_REG_ACCESS_BUFF_OUT>.
+    Found 1-bit register for signal <REG_WRITE_BUFF_OUT>.
+    Found 32-bit register for signal <VALUE_BUFFER_OUT>.
+    Summary:
+	inferred  73 D-type flip-flop(s).
+Unit <dataBuffer_behavioral> synthesized.
+
+Synthesizing Unit <MEMORY_ACCESS>.
+    Related source file is "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\MEMORY_ACCESS.v".
+    Summary:
+	no macro.
+Unit <MEMORY_ACCESS> synthesized.
+
+Synthesizing Unit <dataMemory_behavioral>.
+    Related source file is "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\dataMemory_behavioral.v".
+WARNING:Xst:647 - Input <ADDRESS_MEMORY<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 256x32-bit single-port RAM <Mram_MEMORY> for signal <MEMORY>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Multiplexer(s).
+Unit <dataMemory_behavioral> synthesized.
+
+Synthesizing Unit <dataMux_behavioral>.
+    Related source file is "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\dataMux_behavioral.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <dataMux_behavioral> synthesized.
+
+Synthesizing Unit <memRollBackBuffer_behavioral>.
+    Related source file is "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\memRollBackBuffer_behavioral.v".
+    Found 5-bit register for signal <DEST_ADDR_OUT>.
+    Found 1-bit register for signal <REG_WRITE_OUT>.
+    Found 32-bit register for signal <MEMORY_TO_REG>.
+    Summary:
+	inferred  38 D-type flip-flop(s).
+Unit <memRollBackBuffer_behavioral> synthesized.
+
+Synthesizing Unit <WRITE_BACK>.
+    Related source file is "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\WRITE_BACK.v".
+    Summary:
+	no macro.
+Unit <WRITE_BACK> synthesized.
+
+Synthesizing Unit <shiftLeft_behavioral>.
+    Related source file is "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\shiftLeft_behavioral.v".
+WARNING:Xst:647 - Input <EXTENDED_UNSHIFT<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <shiftLeft_behavioral> synthesized.
+
+Synthesizing Unit <jumperAddr_behavioral>.
+    Related source file is "C:\Proyects\Arquitectura\Act. 10 Proyecto final\Pipeline\jumperAddr_behavioral.v".
+    Found 32-bit adder for signal <n0003> created at line 8.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <jumperAddr_behavioral> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 256x32-bit single-port RAM                            : 1
+ 32x32-bit dual-port RAM                               : 2
+ 64x32-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 1
+ 32-bit addsub                                         : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 25
+ 1-bit register                                        : 11
+ 2-bit register                                        : 1
+ 32-bit register                                       : 7
+ 5-bit register                                        : 3
+ 8-bit register                                        : 3
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 24
+ 1-bit 2-to-1 multiplexer                              : 2
+ 32-bit 2-to-1 multiplexer                             : 16
+ 4-bit 2-to-1 multiplexer                              : 4
+ 5-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <memInst_behavioral>.
+INFO:Xst:3231 - The small RAM <Mram_REG_INST> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 32-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <ADDRESS>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <memInst_behavioral> synthesized (advanced).
+
+Synthesizing (advanced) Unit <topModule>.
+INFO:Xst:3226 - The RAM <DECODE_LOOP/REG_MEM/Mram_REG_BANK> will be implemented as a BLOCK RAM, absorbing the following register(s): <INST_BUFFER/DATA_OUT>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <FINAL_WRITE_ADDR> |          |
+    |     diA            | connected to signal <(DUMMY_BUFF<31:5>,DATA_ROLLBACK_TO_REG)> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkB           | connected to signal <clk>           | rise     |
+    |     addrB          | connected to signal <FETCH_TO_INST_BUFFER<25:21>> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3225 - The RAM <MEMORY/DATA_MEMORY/Mram_MEMORY> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 32-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <MEM_WRITE_MEM> | high     |
+    |     addrA          | connected to signal <ALU_RESULT_MEM<7:0>> |          |
+    |     diA            | connected to signal <STORE_DATA_MEM> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 256-word x 32-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkB           | connected to signal <clk>           | rise     |
+    |     addrB          | connected to signal <RESPONSE_ALU<7:0>> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <DECODE_LOOP/REG_MEM/Mram_REG_BANK1> will be implemented as a BLOCK RAM, absorbing the following register(s): <INST_BUFFER/DATA_OUT>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <FINAL_WRITE_ADDR> |          |
+    |     diA            | connected to signal <(DUMMY_BUFF<31:5>,DATA_ROLLBACK_TO_REG)> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkB           | connected to signal <clk>           | rise     |
+    |     addrB          | connected to signal <FETCH_TO_INST_BUFFER<20:16>> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <topModule> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 256x32-bit dual-port block RAM                        : 1
+ 32x32-bit dual-port block RAM                         : 2
+ 64x32-bit single-port distributed Read Only RAM       : 1
+# Adders/Subtractors                                   : 3
+ 32-bit addsub                                         : 1
+ 8-bit adder                                           : 2
+# Registers                                            : 276
+ Flip-Flops                                            : 276
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 55
+ 1-bit 2-to-1 multiplexer                              : 34
+ 32-bit 2-to-1 multiplexer                             : 15
+ 4-bit 2-to-1 multiplexer                              : 4
+ 5-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <ALU_BUFFER/MEM_TO_REG_BUFF_OUT> in Unit <topModule> is equivalent to the following FF/Latch, which will be removed : <ALU_BUFFER/MEM_READ_BUFF_OUT> 
+INFO:Xst:2261 - The FF/Latch <ALU_BUFFER/BRANCH_BUFF_OUT> in Unit <topModule> is equivalent to the following FF/Latch, which will be removed : <ALU_BUFFER/ALU_OP_BUFF_OUT_0> 
+INFO:Xst:2261 - The FF/Latch <ALU_BUFFER/EXTENDED_OUT_15> in Unit <topModule> is equivalent to the following 16 FFs/Latches, which will be removed : <ALU_BUFFER/EXTENDED_OUT_16> <ALU_BUFFER/EXTENDED_OUT_17> <ALU_BUFFER/EXTENDED_OUT_18> <ALU_BUFFER/EXTENDED_OUT_19> <ALU_BUFFER/EXTENDED_OUT_20> <ALU_BUFFER/EXTENDED_OUT_21> <ALU_BUFFER/EXTENDED_OUT_22> <ALU_BUFFER/EXTENDED_OUT_23> <ALU_BUFFER/EXTENDED_OUT_24> <ALU_BUFFER/EXTENDED_OUT_25> <ALU_BUFFER/EXTENDED_OUT_26> <ALU_BUFFER/EXTENDED_OUT_27> <ALU_BUFFER/EXTENDED_OUT_28> <ALU_BUFFER/EXTENDED_OUT_29> <ALU_BUFFER/EXTENDED_OUT_30> <ALU_BUFFER/EXTENDED_OUT_31> 
+INFO:Xst:2261 - The FF/Latch <DATA_BUFFER/MEM_TO_REG_ACCESS_BUFF_OUT> in Unit <topModule> is equivalent to the following FF/Latch, which will be removed : <DATA_BUFFER/MEM_READ_ACCESS_BUFF_OUT> 
+WARNING:Xst:1710 - FF/Latch <ALU_BUFFER/MEM_TO_REG_BUFF_OUT> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALU_BUFFER/MEM_WRITE_BUFF_OUT> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALU_BUFFER/ALU_SRC_BUFF_OUT> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <INST_BUFFER/DATA_OUT_31> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <INST_BUFFER/DATA_OUT_30> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <INST_BUFFER/DATA_OUT_29> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <INST_BUFFER/DATA_OUT_27> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <INST_BUFFER/DATA_OUT_26> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <INST_BUFFER/DATA_OUT_25> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <INST_BUFFER/DATA_OUT_24> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <INST_BUFFER/DATA_OUT_23> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <INST_BUFFER/DATA_OUT_22> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <INST_BUFFER/DATA_OUT_20> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <INST_BUFFER/DATA_OUT_19> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <INST_BUFFER/DATA_OUT_1> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <INST_BUFFER/DATA_OUT_2> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <INST_BUFFER/DATA_OUT_3> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <INST_BUFFER/DATA_OUT_4> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <INST_BUFFER/DATA_OUT_6> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <INST_BUFFER/DATA_OUT_7> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <INST_BUFFER/DATA_OUT_8> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <INST_BUFFER/DATA_OUT_9> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <INST_BUFFER/DATA_OUT_10> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <INST_BUFFER/DATA_OUT_11> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <INST_BUFFER/DATA_OUT_12> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <INST_BUFFER/DATA_OUT_14> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <INST_BUFFER/DATA_OUT_15> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <INST_BUFFER/DATA_OUT_16> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <INST_BUFFER/DATA_OUT_18> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_BUFFER/MEM_TO_REG_ACCESS_BUFF_OUT> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_BUFFER/MEM_WRITE_ACCESS_BUFF_OUT> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALU_BUFFER/EXTENDED_OUT_15> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALU_BUFFER/EXTENDED_OUT_14> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALU_BUFFER/EXTENDED_OUT_12> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALU_BUFFER/EXTENDED_OUT_11> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALU_BUFFER/EXTENDED_OUT_10> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALU_BUFFER/EXTENDED_OUT_9> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALU_BUFFER/EXTENDED_OUT_8> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALU_BUFFER/EXTENDED_OUT_7> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALU_BUFFER/EXTENDED_OUT_6> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALU_BUFFER/EXTENDED_OUT_4> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALU_BUFFER/EXTENDED_OUT_3> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALU_BUFFER/EXTENDED_OUT_2> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALU_BUFFER/EXTENDED_OUT_1> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ALU_BUFFER/DEST_ADDR_OUT_0> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALU_BUFFER/DEST_ADDR_OUT_3> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALU_BUFFER/DEST_ADDR_OUT_4> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_BUFFER/DEST_ADDR_OUT_0> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_BUFFER/DEST_ADDR_OUT_3> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_BUFFER/DEST_ADDR_OUT_4> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ROLLBACK_BUFFER/DEST_ADDR_OUT_0> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ROLLBACK_BUFFER/DEST_ADDR_OUT_3> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ROLLBACK_BUFFER/DEST_ADDR_OUT_4> (without init value) has a constant value of 0 in block <topModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <ALU_BUFFER/EXTENDED_OUT_13> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_0> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_1> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_2> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_3> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_4> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_5> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_6> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_7> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_8> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_9> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_10> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_11> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_12> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_13> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_14> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_15> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_16> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_17> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_18> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_19> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_20> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_21> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_22> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_23> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_24> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_25> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_26> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_27> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_28> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_29> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_30> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <DATA_BUFFER/READ_DATA_2_OUT_31> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <MEMORY/DATA_MEMORY/Mram_MEMORY> of sequential type is unconnected in block <topModule>.
+INFO:Xst:2261 - The FF/Latch <ALU_BUFFER/REG_WRITE_BUFF_OUT> in Unit <topModule> is equivalent to the following FF/Latch, which will be removed : <ALU_BUFFER/ALU_OP_BUFF_OUT_1> 
+
+Optimizing unit <topModule> ...
+
+Optimizing unit <PC_behavioral> ...
+
+Optimizing unit <alu_behavioral> ...
+WARNING:Xst:2677 - Node <INST_BUFFER/PC_COUNTER_FIRST_OUT_0> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <INST_BUFFER/PC_COUNTER_FIRST_OUT_1> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <ALU_BUFFER/PC_COUNTER_SECOND_OUT_0> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <ALU_BUFFER/PC_COUNTER_SECOND_OUT_1> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <FETCH_LOOP/PC/PC_REG_1> of sequential type is unconnected in block <topModule>.
+WARNING:Xst:2677 - Node <FETCH_LOOP/PC/PC_REG_0> of sequential type is unconnected in block <topModule>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block topModule, actual ratio is 0.
+
+Final Macro Processing ...
+
+Processing Unit <topModule> :
+	Found 2-bit shift register for signal <ALU_BUFFER/PC_COUNTER_SECOND_OUT_2>.
+	Found 2-bit shift register for signal <ALU_BUFFER/PC_COUNTER_SECOND_OUT_3>.
+	Found 2-bit shift register for signal <ALU_BUFFER/PC_COUNTER_SECOND_OUT_4>.
+	Found 2-bit shift register for signal <ALU_BUFFER/PC_COUNTER_SECOND_OUT_5>.
+	Found 2-bit shift register for signal <ALU_BUFFER/PC_COUNTER_SECOND_OUT_6>.
+	Found 2-bit shift register for signal <ALU_BUFFER/PC_COUNTER_SECOND_OUT_7>.
+	Found 2-bit shift register for signal <ROLLBACK_BUFFER/REG_WRITE_OUT>.
+	Found 2-bit shift register for signal <ROLLBACK_BUFFER/DEST_ADDR_OUT_1>.
+	Found 2-bit shift register for signal <ROLLBACK_BUFFER/DEST_ADDR_OUT_2>.
+Unit <topModule> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 146
+ Flip-Flops                                            : 146
+# Shift Registers                                      : 9
+ 2-bit shift register                                  : 9
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : topModule.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 298
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 69
+#      LUT3                        : 1
+#      LUT4                        : 68
+#      LUT5                        : 68
+#      LUT6                        : 7
+#      MUXCY                       : 47
+#      MUXF7                       : 3
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 155
+#      FD                          : 146
+#      FDE                         : 9
+# RAMS                             : 2
+#      RAMB18E1                    : 2
+# Shift Registers                  : 9
+#      SRLC16E                     : 9
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 32
+#      OBUF                        : 32
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k70tfbg676-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             155  out of  82000     0%  
+ Number of Slice LUTs:                  223  out of  41000     0%  
+    Number used as Logic:               214  out of  41000     0%  
+    Number used as Memory:                9  out of  13400     0%  
+       Number used as SRL:                9
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    259
+   Number with an unused Flip Flop:     104  out of    259    40%  
+   Number with an unused LUT:            36  out of    259    13%  
+   Number of fully used LUT-FF pairs:   119  out of    259    45%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          33
+ Number of bonded IOBs:                  33  out of    300    11%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of    135     0%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 166   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 3.087ns (Maximum Frequency: 323.944MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 1.035ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.087ns (frequency: 323.944MHz)
+  Total number of paths / destination ports: 16589 / 242
+-------------------------------------------------------------------------
+Delay:               3.087ns (Levels of Logic = 51)
+  Source:            ALU_BUFFER/DATA_OUT_2_0 (FF)
+  Destination:       DATA_BUFFER/VALUE_BUFFER_OUT_31 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: ALU_BUFFER/DATA_OUT_2_0 to DATA_BUFFER/VALUE_BUFFER_OUT_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.236   0.534  ALU_BUFFER/DATA_OUT_2_0 (ALU_BUFFER/DATA_OUT_2_0)
+     LUT4:I0->O            1   0.043   0.000  EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_lut<0> (EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_lut<0>)
+     MUXCY:S->O            1   0.238   0.000  EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<0> (EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<0>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<1> (EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<2> (EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<3> (EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<3>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<4> (EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<4>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<5> (EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<5>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<6> (EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<6>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<7> (EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<7>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<8> (EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<8>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<9> (EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<9>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<10> (EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<10>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<11> (EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<11>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<12> (EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<12>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<13> (EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<13>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<14> (EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<14>)
+     MUXCY:CI->O           2   0.150   0.355  EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<15> (EXECUTE_LOOP/ALU/Mcompar_REG_DATA_1_INSIDE[31]_MUX_INPUT[31]_LessThan_11_o_cy<15>)
+     LUT5:I4->O            1   0.043   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_lut<0> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_lut<0>)
+     MUXCY:S->O            1   0.238   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<0> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<0>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<1> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<2> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<3> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<3>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<4> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<4>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<5> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<5>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<6> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<6>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<7> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<7>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<8> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<8>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<9> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<9>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<10> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<10>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<11> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<11>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<12> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<12>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<13> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<13>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<14> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<14>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<15> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<15>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<16> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<16>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<17> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<17>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<18> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<18>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<19> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<19>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<20> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<20>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<21> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<21>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<22> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<22>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<23> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<23>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<24> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<24>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<25> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<25>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<26> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<26>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<27> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<27>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<28> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<28>)
+     MUXCY:CI->O           1   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<29> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<29>)
+     MUXCY:CI->O           0   0.013   0.000  EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<30> (EXECUTE_LOOP/ALU/Mmux__n00366_rs_cy<30>)
+     XORCY:CI->O           1   0.262   0.350  EXECUTE_LOOP/ALU/Mmux__n00366_rs_xor<31> (EXECUTE_LOOP/ALU/Mmux__n00366_split<31>)
+     LUT5:I4->O            1   0.043   0.000  EXECUTE_LOOP/ALU/ALU_OUT_TO_MEM<31>1 (RESPONSE_ALU<31>)
+     FD:D                     -0.000          DATA_BUFFER/VALUE_BUFFER_OUT_31
+    ----------------------------------------
+    Total                      3.087ns (1.847ns logic, 1.239ns route)
+                                       (59.8% logic, 40.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 34 / 32
+-------------------------------------------------------------------------
+Offset:              1.035ns (Levels of Logic = 2)
+  Source:            ROLLBACK_BUFFER/MEMORY_TO_REG_2 (FF)
+  Destination:       DUMMY_BUFF<2> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: ROLLBACK_BUFFER/MEMORY_TO_REG_2 to DUMMY_BUFF<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.236   0.417  ROLLBACK_BUFFER/MEMORY_TO_REG_2 (ROLLBACK_BUFFER/MEMORY_TO_REG_2)
+     LUT2:I0->O            1   0.043   0.339  _n0035<2>1 (DUMMY_BUFF_2_OBUF)
+     OBUF:I->O                 0.000          DUMMY_BUFF_2_OBUF (DUMMY_BUFF<2>)
+    ----------------------------------------
+    Total                      1.035ns (0.279ns logic, 0.756ns route)
+                                       (27.0% logic, 73.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.087|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 14.45 secs
+ 
+--> 
+
+Total memory usage is 4619352 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  100 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
+

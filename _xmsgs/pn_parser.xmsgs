@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/DECODE.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/EXECUTE.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/FETCH.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/MEMORY_ACCESS.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/PC_behavioral.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/WRITE_BACK.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/addr_behavioral.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/aluBuffer_behavioral.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/aluControl_beh.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/aluControl_behavioral.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/aluMux_behavioral.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/alu_behavioral.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/dataBuffer_behavioral.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/dataMemory_behavioral.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/dataMux_behavioral.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/instBuffer_behavioral.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/jumperAddr_behavioral.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/jumperMux_behavioral.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/memInst_behavioral.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/memRollBackBuffer_behavioral.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/regMem_behavioral.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/regMux_behavioral.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/shiftLeft_behavioral.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/signalExtend_behavioral.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/topModule.v&quot; into library work</arg>
+</msg>
+
+</messages>
+

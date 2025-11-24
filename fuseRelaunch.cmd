@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/topModule_tb_isim_beh.exe" -prj "C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/topModule_tb_beh.prj" "work.topModule_tb" "work.glbl" 

@@ -1,0 +1,65 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/topModule_tb_isim_beh.exe -prj C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/topModule_tb_beh.prj work.topModule_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/addr_behavioral.v" into library work
+Analyzing Verilog file "C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/shiftLeft_behavioral.v" into library work
+Analyzing Verilog file "C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/regMux_behavioral.v" into library work
+Analyzing Verilog file "C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/regMem_behavioral.v" into library work
+Analyzing Verilog file "C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/PC_behavioral.v" into library work
+Analyzing Verilog file "C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/memInst_behavioral.v" into library work
+Analyzing Verilog file "C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/jumperAddr_behavioral.v" into library work
+Analyzing Verilog file "C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/dataMux_behavioral.v" into library work
+Analyzing Verilog file "C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/dataMemory_behavioral.v" into library work
+Analyzing Verilog file "C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/alu_behavioral.v" into library work
+Analyzing Verilog file "C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/aluMux_behavioral.v" into library work
+Analyzing Verilog file "C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/WRITE_BACK.v" into library work
+Analyzing Verilog file "C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/signalExtend_behavioral.v" into library work
+Analyzing Verilog file "C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/memRollBackBuffer_behavioral.v" into library work
+Analyzing Verilog file "C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/MEMORY_ACCESS.v" into library work
+Analyzing Verilog file "C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/instBuffer_behavioral.v" into library work
+Analyzing Verilog file "C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/FETCH.v" into library work
+Analyzing Verilog file "C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/EXECUTE.v" into library work
+Analyzing Verilog file "C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/DECODE.v" into library work
+Analyzing Verilog file "C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/dataBuffer_behavioral.v" into library work
+Analyzing Verilog file "C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/aluControl_behavioral.v" into library work
+Analyzing Verilog file "C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/aluControl_beh.v" into library work
+Analyzing Verilog file "C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/aluBuffer_behavioral.v" into library work
+Analyzing Verilog file "C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/topModule.v" into library work
+Analyzing Verilog file "C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/topModule_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module addr_behavioral
+Compiling module PC_behavioral
+Compiling module memInst_behavioral
+Compiling module FETCH
+Compiling module instBuffer_behavioral
+Compiling module aluControl_behavioral
+Compiling module regMem_behavioral
+Compiling module instMux_behavioral
+Compiling module DECODE
+Compiling module signalExtend_behavioral
+Compiling module aluBuffer_behavioral
+Compiling module aluControl_beh
+Compiling module alu_behavioral
+Compiling module aluMux_behavioral
+Compiling module EXECUTE
+Compiling module dataBuffer_behavioral
+Compiling module dataMemory_behavioral
+Compiling module dataMux_behavioral
+Compiling module MEMORY_ACCESS
+Compiling module memRollBackBuffer_behavioral
+Compiling module shiftLeft_behavioral
+Compiling module jumperAddr_behavioral
+Compiling module WRITE_BACK
+Compiling module topModule
+Compiling module topModule_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 3 sub-compilation(s) to finish...
+Compiled 26 Verilog Units
+Built simulation executable C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/topModule_tb_isim_beh.exe
+Fuse Memory Usage: 28412 KB
+Fuse CPU Usage: 500 ms
