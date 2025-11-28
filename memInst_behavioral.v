@@ -7,7 +7,7 @@ module memInst_behavioral(
     reg [31:0] REG_INST [0:63];
     
     initial begin
-        $readmemb("MEM_INST.txt", REG_INST);
+        $readmemb("program.txt", REG_INST);
     end
 	 
     assign DATA_OUT = REG_INST[ADDRESS[7:2]];

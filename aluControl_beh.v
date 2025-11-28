@@ -13,7 +13,9 @@ module aluControl_beh(
 		end else if (OP_CONTROL == 2'b10) begin
 		
 		//R Type begin
-			if (FUNCTION == 6'b100000) begin
+			if (FUNCTION == 6'b000000) begin
+				ALU_CONTROL_OUT = 4'b0010;
+			end else if (FUNCTION == 6'b100000) begin
 				ALU_CONTROL_OUT = 4'b0010;
 			end else if (FUNCTION == 6'b100010) begin
 				ALU_CONTROL_OUT = 4'b0110;

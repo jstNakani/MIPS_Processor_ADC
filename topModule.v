@@ -1,7 +1,11 @@
 `timescale 1ns / 1ps
 module topModule(
     input clk,
-    output [31:0] DUMMY_BUFF
+    output [31:0] DUMMY_BUFF,
+    output [31:0] DUMMY_DATA_READ,
+	output [31:0] DUMMY_ALU_OUT,
+    output [31:0] DUMMY_OUT_FROM_DATA,
+    output DUMMY_WRITE_ENABLE
     );
 
     // FETCH STAGE
@@ -199,5 +203,9 @@ module topModule(
     assign ALU_CONTROL_DATA = INST_BUFFER_OUT[5:0];
 
     assign DUMMY_BUFF = DATA_ROLLBACK_TO_REG | {27'b0, FINAL_WRITE_ADDR};
-
+    assign DUMMY_DATA_READ = DATA_READ_MEM_1;
+    assign DUMMY_ALU_OUT = ALU_RESULT_MEM;
+    assign DUMMY_OUT_FROM_DATA = MEM_ACCESS_OUT_TO_BUFFER;
+    assign DUMMY_WRITE_ENABLE = REG_WRITE_MEM;
+//slash
 endmodule

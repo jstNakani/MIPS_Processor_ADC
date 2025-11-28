@@ -1,30 +1,28 @@
 `timescale 1ns / 1ps
 
 module topModule_tb;
-
-    // Inputs
     reg clk;
-
-    // Outputs
     wire [31:0] DUMMY_BUFF;
+    wire [31:0] DUMMY_DATA_READ;
+	wire [31:0] DUMMY_ALU_OUT;
+    wire [31:0] DUMMY_OUT_FROM_DATA;
+    wire DUMMY_WRITE_ENABLE;
 
-    // Instantiate the Unit Under Test (UUT)
     topModule uut (
         .clk(clk), 
-        .DUMMY_BUFF(DUMMY_BUFF)
+        .DUMMY_BUFF(DUMMY_BUFF),
+        .DUMMY_DATA_READ(DUMMY_DATA_READ),
+        .DUMMY_ALU_OUT(DUMMY_ALU_OUT),
+        .DUMMY_OUT_FROM_DATA(DUMMY_OUT_FROM_DATA),
+        .DUMMY_WRITE_ENABLE(DUMMY_WRITE_ENABLE)
     );
+	 //slash
 
     initial begin
-        // Initialize Inputs
         clk = 0;
-
-        // Wait for global reset to finish
-        #10;
-        
-
+        #10000;
+		  $finish;
     end
-    
-    // Generate Clock (Period = 10ns)
     always begin
         #5 clk = ~clk;
     end

@@ -36,8 +36,9 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="topModule.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="topModule.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="topModule_envsettings.html"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="topModule_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="topModule_summary.html"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="topModule_tb_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="topModule_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="topModule_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="topModule_tb_isim_beh.wdb"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="topModule_tb_stx_beh.prj"/>
@@ -48,54 +49,11 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1763844898" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1763844898">
+    <transform xil_pn:end_ts="1764217039" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1764217039">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1763877525" xil_pn:in_ck="-7850085303241225762" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1763877525">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="DECODE.v"/>
-      <outfile xil_pn:name="EXECUTE.v"/>
-      <outfile xil_pn:name="FETCH.v"/>
-      <outfile xil_pn:name="FETCH_tb.v"/>
-      <outfile xil_pn:name="MEMORY_ACCESS.v"/>
-      <outfile xil_pn:name="PC_behavioral.v"/>
-      <outfile xil_pn:name="WRITE_BACK.v"/>
-      <outfile xil_pn:name="addr_behavioral.v"/>
-      <outfile xil_pn:name="aluBuffer_behavioral.v"/>
-      <outfile xil_pn:name="aluControl_beh.v"/>
-      <outfile xil_pn:name="aluControl_behavioral.v"/>
-      <outfile xil_pn:name="aluMux_behavioral.v"/>
-      <outfile xil_pn:name="alu_behavioral.v"/>
-      <outfile xil_pn:name="dataBuffer_behavioral.v"/>
-      <outfile xil_pn:name="dataMemory_behavioral.v"/>
-      <outfile xil_pn:name="dataMux_behavioral.v"/>
-      <outfile xil_pn:name="instBuffer_behavioral.v"/>
-      <outfile xil_pn:name="jumperAddr_behavioral.v"/>
-      <outfile xil_pn:name="jumperMux_behavioral.v"/>
-      <outfile xil_pn:name="memInst_behavioral.v"/>
-      <outfile xil_pn:name="memRollBackBuffer_behavioral.v"/>
-      <outfile xil_pn:name="regMem_behavioral.v"/>
-      <outfile xil_pn:name="regMux_behavioral.v"/>
-      <outfile xil_pn:name="shiftLeft_behavioral.v"/>
-      <outfile xil_pn:name="signalExtend_behavioral.v"/>
-      <outfile xil_pn:name="topModule.v"/>
-      <outfile xil_pn:name="topModule_tb.v"/>
-    </transform>
-    <transform xil_pn:end_ts="1763844900" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="682135349908581605" xil_pn:start_ts="1763844900">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1763844900" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-1546464244564316583" xil_pn:start_ts="1763844900">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1763857008" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="6505699927268630716" xil_pn:start_ts="1763857008">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1763877527" xil_pn:in_ck="-7850085303241225762" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1763877527">
+    <transform xil_pn:end_ts="1764217039" xil_pn:in_ck="-7850085303241225762" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1764217039">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="DECODE.v"/>
@@ -126,7 +84,50 @@
       <outfile xil_pn:name="topModule.v"/>
       <outfile xil_pn:name="topModule_tb.v"/>
     </transform>
-    <transform xil_pn:end_ts="1763877530" xil_pn:in_ck="-7850085303241225762" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-4341625082938154844" xil_pn:start_ts="1763877527">
+    <transform xil_pn:end_ts="1764224539" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="682135349908581605" xil_pn:start_ts="1764224539">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1764224539" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-1546464244564316583" xil_pn:start_ts="1764224539">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1764217039" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="6505699927268630716" xil_pn:start_ts="1764217039">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1764217039" xil_pn:in_ck="-7850085303241225762" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1764217039">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="DECODE.v"/>
+      <outfile xil_pn:name="EXECUTE.v"/>
+      <outfile xil_pn:name="FETCH.v"/>
+      <outfile xil_pn:name="FETCH_tb.v"/>
+      <outfile xil_pn:name="MEMORY_ACCESS.v"/>
+      <outfile xil_pn:name="PC_behavioral.v"/>
+      <outfile xil_pn:name="WRITE_BACK.v"/>
+      <outfile xil_pn:name="addr_behavioral.v"/>
+      <outfile xil_pn:name="aluBuffer_behavioral.v"/>
+      <outfile xil_pn:name="aluControl_beh.v"/>
+      <outfile xil_pn:name="aluControl_behavioral.v"/>
+      <outfile xil_pn:name="aluMux_behavioral.v"/>
+      <outfile xil_pn:name="alu_behavioral.v"/>
+      <outfile xil_pn:name="dataBuffer_behavioral.v"/>
+      <outfile xil_pn:name="dataMemory_behavioral.v"/>
+      <outfile xil_pn:name="dataMux_behavioral.v"/>
+      <outfile xil_pn:name="instBuffer_behavioral.v"/>
+      <outfile xil_pn:name="jumperAddr_behavioral.v"/>
+      <outfile xil_pn:name="jumperMux_behavioral.v"/>
+      <outfile xil_pn:name="memInst_behavioral.v"/>
+      <outfile xil_pn:name="memRollBackBuffer_behavioral.v"/>
+      <outfile xil_pn:name="regMem_behavioral.v"/>
+      <outfile xil_pn:name="regMux_behavioral.v"/>
+      <outfile xil_pn:name="shiftLeft_behavioral.v"/>
+      <outfile xil_pn:name="signalExtend_behavioral.v"/>
+      <outfile xil_pn:name="topModule.v"/>
+      <outfile xil_pn:name="topModule_tb.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1764224542" xil_pn:in_ck="-7850085303241225762" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-4341625082938154844" xil_pn:start_ts="1764224539">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -138,7 +139,7 @@
       <outfile xil_pn:name="topModule_tb_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1763877530" xil_pn:in_ck="7295178354558568541" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4095211614564429543" xil_pn:start_ts="1763877530">
+    <transform xil_pn:end_ts="1764224692" xil_pn:in_ck="-9131399742432678203" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4095211614564429543" xil_pn:start_ts="1764224692">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -175,10 +176,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1764001068" xil_pn:in_ck="9135395206784436489" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="4579434142748473892" xil_pn:start_ts="1764001050">
+    <transform xil_pn:end_ts="1764217028" xil_pn:in_ck="9135395206784436489" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="4579434142748473892" xil_pn:start_ts="1764217018">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="topModule.lso"/>
       <outfile xil_pn:name="topModule.ngc"/>
@@ -187,7 +191,6 @@
       <outfile xil_pn:name="topModule.stx"/>
       <outfile xil_pn:name="topModule.syr"/>
       <outfile xil_pn:name="topModule.xst"/>
-      <outfile xil_pn:name="topModule_tb_beh.prj"/>
       <outfile xil_pn:name="topModule_tb_stx_beh.prj"/>
       <outfile xil_pn:name="topModule_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>

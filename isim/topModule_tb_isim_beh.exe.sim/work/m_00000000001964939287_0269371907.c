@@ -22,7 +22,7 @@
 #define alloca _alloca
 #endif
 static const char *ng0 = "C:/Proyects/Arquitectura/Act. 10 Proyecto final/Pipeline/memInst_behavioral.v";
-static const char *ng1 = "MEM_INST.txt";
+static const char *ng1 = "program.txt";
 
 
 

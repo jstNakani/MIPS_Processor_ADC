@@ -9,36 +9,34 @@ module alu_behavioral(
     );
 
     always @* begin
+        // Defaults
         ALU_ZERO_CONDITION = 1'b0; 
         ALU_OUT_TO_MEM = 32'd0;
 
-        if (ALU_CONTROL_INSIDE == 4'b0010) begin
+        if (ALU_CONTROL_INSIDE == 4'b0010) begin // ADD
             ALU_OUT_TO_MEM = REG_DATA_1_INSIDE + MUX_INPUT;
-            ALU_ZERO_CONDITION = 1'b0;
-        end else if (ALU_CONTROL_INSIDE == 4'b0110) begin
+        end else if (ALU_CONTROL_INSIDE == 4'b0110) begin // SUB (BEQ)
             ALU_OUT_TO_MEM = REG_DATA_1_INSIDE - MUX_INPUT;
-
-            if (OP_CODE_INSIDE == 2'b01) begin
+            
+            // FIX: Only set Zero Flag if the result is actually zero!
+            if (ALU_OUT_TO_MEM == 32'd0) begin
                 ALU_ZERO_CONDITION = 1'b1;
             end else begin
                 ALU_ZERO_CONDITION = 1'b0;
             end
-        end else if (ALU_CONTROL_INSIDE == 4'b0000) begin
+            
+        end else if (ALU_CONTROL_INSIDE == 4'b0000) begin // AND
             ALU_OUT_TO_MEM = REG_DATA_1_INSIDE & MUX_INPUT;
-            ALU_ZERO_CONDITION = 1'b0;
-        end else if (ALU_CONTROL_INSIDE == 4'b0001) begin
+        end else if (ALU_CONTROL_INSIDE == 4'b0001) begin // OR
             ALU_OUT_TO_MEM = REG_DATA_1_INSIDE | MUX_INPUT;
-            ALU_ZERO_CONDITION = 1'b0;
-        end else if (ALU_CONTROL_INSIDE == 4'b0111) begin
+        end else if (ALU_CONTROL_INSIDE == 4'b0111) begin // SLT
             if (REG_DATA_1_INSIDE < MUX_INPUT) begin
                 ALU_OUT_TO_MEM = 32'd1;
             end else begin
                 ALU_OUT_TO_MEM = 32'd0;
             end
-            ALU_ZERO_CONDITION = 1'b0;
         end else begin
              ALU_OUT_TO_MEM = 32'd10;
-             ALU_ZERO_CONDITION = 1'b0;
         end
     end
 endmodule
